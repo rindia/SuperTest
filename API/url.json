@@ -1,0 +1,8 @@
+{
+    "Urls": {
+        "url": "http://dummy.restapiexample.com",
+        "getUserById": "/api/v1/employee/",
+        "getUserList": "/api/v1/employees",
+        "postUser": "/posts"
+    }
+}
