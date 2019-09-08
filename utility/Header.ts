@@ -6,12 +6,8 @@ export enum HeadersTypes {
 }
 
 export class Header {
-
-
     public static setHeader(headerType: any) {
         const map = new Map();
-
-
         if (HeadersTypes.ContenetTypeJSON) {
             map.set('content-type', 'application/json');
         } else

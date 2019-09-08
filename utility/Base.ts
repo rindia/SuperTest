@@ -1,5 +1,6 @@
 import supertest = require("supertest");
 import { Header } from "./Header";
+import request = require("superagent");
 const apiUrl = require('../API/Url');
 
 export class Base {
@@ -18,6 +19,13 @@ export class Base {
         const res = await (await Base.getURL()).get(requestURL + id)
             .set(Header.setHeader(headerTypes))
             .expect(200);
+        return res;
+    }
+    public static async postRequestUser(requestURL: string, headerTypes: any, data: any) {
+
+        const res = await (await Base.getURL()).post(requestURL)
+            .send(data)
+            .set('Accept', `${'application/json'}`);
         return res;
     }
 }

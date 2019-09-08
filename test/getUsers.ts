@@ -10,14 +10,14 @@ const getUserById = apiUrl.Urls.getUserById;
 
 describe('First Request to Get Users', async () => {
 
-    it('Get ALl User List', async () => {
+    it.skip('Get ALl User List', async () => {
         const res = await UsersList.verifyAllUserList(list_users);
         const a = JSON.parse(res.text);
         console.log(a[1].id);
     });
 
-    it('Get ALl User List by ID', async () => {
-        const res = await UsersList.verifyAllUserListByID(getUserById, '2');
+    it.skip('Get ALl User List by ID', async () => {
+        const res = await UsersList.verifyAllUserListByID(getUserById, '149442');
         const a = JSON.parse(res.text);
         console.log(res.text);
     });
