@@ -1,10 +1,7 @@
-import { expect } from 'chai';
 import supertest = require('supertest');
-import { Header, HeadersTypes } from './utility/Header';
-import { Base } from './utility/Base';
-import { UsersList } from './operations/UserList';
-const apiUrl = require('./API/Url');
-const postUser = require('./API/postUserTemplate');
+import { UsersList } from '../operations/UserList';
+const apiUrl = require('../API/Url');
+const postUser = require('../API/postUserTemplate');
 
 const list_users = apiUrl.Urls.getUserList;
 const postUserDataUrl = apiUrl.Urls.getUserById;

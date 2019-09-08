@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register *.ts --reporter mochawesome --code='false'",
-    "spec": "mocha -r ts-node/register *.ts --timeout='15000'"
+    "test": "mocha -r ts-node/register test/*.ts --reporter mochawesome --code='false'",
+    "spec": "mocha -r ts-node/register test/*.ts --timeout='15000'"
   },
   "author": "",
   "license": "ISC",
