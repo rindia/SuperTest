@@ -11,7 +11,7 @@ const getUserById = apiUrl.Urls.getUserById;
 describe('Post Request Test Suite', async () => {
 
     it.only('Add New Users', async () => {
-        const obj = {"name":"sainix","salary":"470000","age":"30","id":"897"};
+        const obj = {"name":"sainix1","salary":"470000","age":"30","id":"897"};
         const res = await UsersList.verifyPostUsers(userPost, obj);
         const a = JSON.parse(res.text);
     });

@@ -1,9 +1,4 @@
-export enum HeadersTypes {
-
-    ContenetTypeJSON,
-    ContentTypeHTML
-
-}
+import { HeadersTypes } from "./HeadersTypes";
 
 export class Header {
     public static setHeader(headerType: any) {
