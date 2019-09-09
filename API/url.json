@@ -3,6 +3,8 @@
         "url": "http://dummy.restapiexample.com",
         "getUserById": "/api/v1/employee/",
         "getUserList": "/api/v1/employees",
-        "postUser": "/api/v1/create"
+        "postUser": "/api/v1/create",
+        "updateUser": "/api/v1/update/",
+        "deleteUser": "/api/v1/delete/"
     }
 }

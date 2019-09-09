@@ -23,5 +23,18 @@ export class RequestType {
             .set('Accept', `${'application/json'}`);
         return res;
     }
+    public static async UpdateRequestUser(requestURL: string, headerTypes: any, data: any, id: string) {
+
+        const res = await (await Base.getURL()).put(requestURL + id)
+            .send(data)
+            .set('Accept', `${'application/json'}`);
+        return res;
+    }
+    public static async DeleteRequestUser(requestURL: string, headerTypes: any, id: string) {
+
+        const res = await (await Base.getURL()).delete(requestURL + id)
+            .set('Accept', `${'application/json'}`);
+        return res;
+    }
 
 }
